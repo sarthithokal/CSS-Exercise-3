@@ -1,0 +1,37 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marquee</title>
+<style>
+    body {
+        margin-top: 20px;
+
+       font-family: : arial;
+    }
+    .important-message {
+        color: red;
+        font-size: 35px ;
+
+        animation: marqueeAnimation 6s linear infinite;
+    }
+    @keyframes marqueeAnimation {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+    .important-message span {
+        color: orange;
+    }
+</style>
+
+
+</head>
+<body>
+
+<marquee behavior="scroll" direction="left" class="important-message">
+    <span> *NOTIFICATIONS* :</span>  B.E.FIRST YEAR RESULT DECLARED
+</marquee>
+
+</body>
+</html>
